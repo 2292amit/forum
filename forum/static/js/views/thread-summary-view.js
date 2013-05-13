@@ -8,10 +8,8 @@ define([
 ], function(Router, threadSummaryTemplate, Vyome){
 
     var ThreadSummaryView = Backbone.View.extend({
-        tagName: 'li',
+        tagName: 'tr',
 
-        className: 'thread_summary_view',
-        
         initialize: function(){
             _.bindAll(this, 'render', 'on_click');
             this.model.bind('change', this.render);

@@ -31,7 +31,7 @@ define([
         
         render_thread_summary: function(thread) {
             var thread_summary_view = new ThreadSummaryView({model: thread});
-            this.$('ul.thread_list').append($(thread_summary_view.render()));
+            this.$('table.thread_list').append($(thread_summary_view.render()));
         },
         
         events: {
