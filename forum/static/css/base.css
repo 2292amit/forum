@@ -1,0 +1,180 @@
+/* CSS Document */
+
+/***********************************
+		General Styles
+***********************************/
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: Tahoma, Verdana;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	margin-left:5px;
+	font-family: Tahoma, Verdana;
+	font-size: 12px;
+	}
+	
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+h1{
+    color: #146B9D;
+    font-size: 22px;
+    font-weight:normal;
+}
+
+h2{
+    color: #146B9D;
+    font-size: 18px;
+    font-weight:normal;    
+}
+
+h3{    
+    font-size: 16px;
+    font-weight:normal;    
+}
+/* RESET END */
+.main_container{
+  margin-top: 0px;
+}
+
+.body_container{
+  text-align: left;
+  width: 1022px;   
+  border-left: 2px solid #DDD;
+  border-right: 2px solid #DDD;
+}
+
+body{text-shadow:#fff 0 1px 0;
+           color:#2c2c2c;
+           font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial;
+           font-weight:400;
+           font-style:normal;
+           font-variant:normal;
+           line-height:normal;
+           background-position:center 0;
+		   padding:0;}
+#logo {
+	 background: url(/static/img/logo.png) no-repeat;
+	 height: 68px;
+	 width: 195px;
+	 text-indent: -99999px;
+	 float:left;
+	 display: block;
+}
+
+#logo a {
+ display: block;
+ height: 68px;
+ width: 195px;
+}
+.brow{
+	height:200px;
+	text-align:center;
+	border-top:1px solid #DDD;
+	padding-top:10px;
+}
+.bcolumn1{
+	width:33%;
+	float:left;
+	border-right: 1px solid #DDD;
+}
+.bcolumn2{
+	width:33%;
+	float:left;
+	border-right: 1px solid #DDD;
+}
+.bcolumn3{
+	width:33%;
+	float:left;
+}
+.column {
+	margin: 0 10px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+    position: relative;
+}
+.row {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.row .row {
+	margin: 0 -10px;
+	width: auto;
+	zoom: 1;
+}		   
+.menu
+{
+	text-align:right;
+	display:inline-block;
+}
+
+.menu ul
+{
+	list-style-type:none;
+	list-style:none;
+	font-size: .885em;
+ 	line-height: 45px;
+}
+.menu li
+{
+	display:inline-block;
+	zoom:1;
+	margin: 0px 0px 0px 20px;
+	color:#0076a3;
+
+}
+.menu a{color:#3d3d3d;
+                text-decoration:none;
+                text-transform:uppercase;
+                letter-spacing:1px;
+                width:70px;
+                padding-top:4px;
+                padding-bottom:8px;
+                display:block;
+                font:12px MisoBold, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial}
+				
+.menu a:hover {
+ color: #00b3f8;
+}
+.fancybox-custom .fancybox-skin 
+{
+	box-shadow: 0 0 50px #222;
+}
+
+

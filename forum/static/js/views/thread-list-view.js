@@ -35,12 +35,24 @@ define([
         },
         
         events: {
-            'click input[type=submit]': 'on_submit',
+            'click .new_thread_submit': 'on_submit',
+            'click .new_thread_cancel': 'on_cancel',
+            'click .new_thread': 'on_new_thread'
         },
         
+        on_new_thread: function(e){
+        	this.$('.new_thread_form').show()
+        },
+        
+        on_cancel: function(e){
+            this.$('.new_thread_title').val("")
+            this.$('.new_thread_form').hide()        	
+        },
         on_submit: function(e) {
             var thread = new Thread({ title: this.$('.new_thread_title').val(), content: this.$('.new_thread_text').val() });
             this.model.create(thread, {wait: true});
+            this.$('.new_thread_title').val("")
+            this.$('.new_thread_form').hide()
         },
                 
         on_error: function(model, response) {

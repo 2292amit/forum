@@ -1,13 +1,34 @@
-    <h2 class="centered">Thread - "<%= title%>"</h2>
-    <h3 class="centered">Content - "<%= content%>"</h3>
+    <h1 class="thread-title">
+		<%= title%>
+	</h1>
+	<div class="post">
+	<div class="avatar-container">
+	<div class="avatar mini" style="">
+	<a href="/profile/<%= author%>" class="clearfix rPos avatar-wrapper avatar_32">
+	<img src="/static/img/images.jpeg" data-sigil="" class="avatar_32">
+	
+	</a>
+	</div>
+	</div>
+	<div class="user">
+		<div class="nick">
+		<a href="/profile/<%= author%>"><%= author%></a>
+		<!-- <span style="font-size:10px;color:#AAA">11h ago</span> -->
+		</div>
+		
+		<div class="timestamp mini pushDown">
+		<a href=#><%= created%></a>
+		</div>
+		<div class="content" id="fpost_16418997_preview_content">
+		<%= content%>
+		</div>
+		<br><br><br>
+        <textarea class="new_message_text" placeholder="Comment on this thread ..."></textarea>
+    	<div class="comment_submit button">Post message</div>
+	</div>
+	</div>
+	
 	<div id="message_container" class="message_list_view">
-	    <ul class="message_list"></ul>
-	    <h2>New message</h2>
-	    <ul>
-	        <li>Text:<br> <textarea class="new_message_text" /></li>
-	    </ul>
-	    <ul>
-	    <input type="submit" value="Post message" />
-	    </ul>
+	    <div class="message_list"></div>
     </div>
     <div class="error_message"></div>

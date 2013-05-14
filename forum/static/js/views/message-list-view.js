@@ -28,10 +28,10 @@ define([
         
         render_message: function(message) {
             var message_view = new MessageView({model: message});
-            this.$('ul.message_list').append($(message_view.render()));
+            this.$('.message_list').prepend($(message_view.render()));
         },
         events: {
-            'click input[type=submit]': 'on_submit',
+            'click .comment_submit': 'on_submit',
         },
         
         on_submit: function(e) {
@@ -40,6 +40,7 @@ define([
                     content: 'no content'};
             var new_message = new Message(obj);
             this.model.create(new_message, {wait:true});
+            this.$('.new_message_text').val("")
         },        
         on_error: function(model, response) {
             var error = $.parseJSON(response.responseText);

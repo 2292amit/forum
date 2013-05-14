@@ -1,15 +1,32 @@
-    <div class="message">
-    <table>
-    <tr>
-    	<td>Author: </td><td><%= author%></td>
-    </tr>
-    <tr>
-    	<td>Title: </td><td><%= title%></td>
-    </tr>
-    <tr>
-    	<td>Created: </td><td><%= created%></td>
-    </tr>
-    </table>
-    </div>
+<div class="post">    
+<div class="avatar-container">
+<div class="avatar mini" style="">
+<a href="/profile/<%= author%>" class="clearfix rPos avatar-wrapper avatar_32">
+<img src="/static/img/images.jpeg" data-sigil="" class="avatar_32">
+
+</a>
+</div>
+</div>
+<div class="user">
+	<div class="nick">
+	<a href="/profile/<%= author%>"><%= author%></a>
+	<!-- <span style="font-size:10px;color:#AAA">11h ago</span> -->
+	</div>
+
+	<div class="timestamp mini pushDown">
+	
+	
+	
+	<a href=#><%= created%></a>
+	
+	</div>
+	<div class="content" id="fpost_16418997_preview_content">
+	
+	<%= title%>
+	<span></span> <!-- HACK to fix the DOM in case of incomplete tags -->
+	
+	</div>
+</div>
+</div>
  
     

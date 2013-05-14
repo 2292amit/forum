@@ -1,37 +1,11 @@
-/*
- * Copyright (C) 2012 Xavier Antoviaque <xavier@antoviaque.org>
- *
- * This software's license gives you freedom; you can copy, convey,
- * propagate, redistribute and/or modify this program under the terms of
- * the GNU Affero Gereral Public License (AGPL) as published by the Free
- * Software Foundation (FSF), either version 3 of the License, or (at your
- * option) any later version of the AGPL published by the FSF.
- *
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero
- * General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program in a file in the toplevel directory called
- * "AGPLv3".  If not, see <http://www.gnu.org/licenses/>.
-*/
-
-/* Global **********************************************************/
-
 html, body {
     font-family: 'Helvetica';
     font-size: 12px;
     line-height: 130%;
-    color: #B9C2A8;
+    color: black;
     padding: 0;
     margin: 0;
-    background-color: rgb(34, 40, 51);
-}
-
-
-a {
-    color: #B9C2A8;
+    background-color: white;
 }
 
 .container {
@@ -54,6 +28,7 @@ a {
     background: transparent url('/static/img/shadow_left.png') repeat left top;
 	top: 0;
 	left: 0;
+	bottom:0;
 	margin-left: -21px;
 }
 
@@ -61,12 +36,13 @@ a {
     background: transparent url('/static/img/shadow_right.png') repeat right top;
 	top: 0;
     right: 0;
+    bottom:0;
     margin-right: -21px;
 }
 
 .main {
 	padding: 20px;
-    background-image: url('/static/img/green_bkg.png');
+    background-color: white;
 }
 
 .centered {
@@ -96,7 +72,7 @@ ul {
 	border-color: grey;
 	cursor: pointer;
     margin: 10px;
-    background-color: #6c8738;
+    background-color: white;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -122,7 +98,11 @@ textarea {
 	height: 50px;
 	margin: 5px;
 }
-
+.new_message_text{
+	width: 450px;
+	height: 25px;
+	margin: 0px;
+}
 .message_author {
 	font-weight: bold;
 	padding: 10px 0 0 5px;
@@ -135,10 +115,153 @@ textarea {
 	
 .message {
 	margin: 20px;
-    background-color: #6c8738;
+    background-color: white;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;	
+}
+.avatar-container {
+display: inline-block;
+vertical-align: top;
+padding-top: 15px;
+padding-left: 20px;
+}
+.message_view{
+	position: relative;
+}
+.user {
+display: inline-block;
+width: 460px;
+border-bottom: none;
+padding: 10px 0px;
+margin: 0px 10px;
+}
+h1.thread-title {
+font-size: 18px;
+line-height: 1.5em;
+font-weight: bold;
+padding: 10px 40px 10px 20px;
+width: 500px;
+margin: 0 auto -6px;
+color: #333333;
+-moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+-webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+background: #eeeeee;
+border-bottom: 1px solid #CCC;
+position: relative;
+text-align: center;
+}
+.post{
+	margin: 0 auto -6px;
+	width: 560px;
+	position: relative;
+	background-color: rgb(240, 232, 232);
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.nick {
+font-size: 14px;
+line-height: 21px;
+color: #333333;
+width: 95%;
+font-size: 13.020000000000001px;
+line-height: 19.53px;
+}
+.user>.timestamp.mini {
+font-size: 10.5px;
+line-height: 15.75px;
+}
+.user>.timestamp {
+font-size: 11.9px;
+line-height: 17.85px;
+position: absolute;
+top: 5px;
+right: 10px;
+}
+.user .content {
+width: 480px;
+display: inline-block;
+margin: 0px 0px;
+padding: 0px;
+font-size: 11.9px;
+line-height: 17.85px;
+}
+.avatar-container {
+display: inline-block;
+vertical-align: top;
+padding-top: 15px;
+padding-left: 20px;
+}
+.avatar.mini{
+margin-bottom: 0px;
+width: 32px;
+height: 32px;
+background-size: 32px;
+display: inline-block;
+-moz-box-shadow: 0px 1px 2px #3b5998;
+-webkit-box-shadow: 0px 1px 2px #3b5998;
+box-shadow: 0px 1px 2px #3b5998;
+}
+.rPos {
+position: relative;
+}
+.avatar-wrapper {
+display: inline-block;
+}
+.avatar_32 {
+width: 32px !important;
+height: 32px !important;
+outline: 0;
+}
+.clearfix {
+zoom: 1;
+}
+table, td, th
+{
+border:1px solid green;
+}
+th
+{
+background-color: rgb(105, 129, 105);
+color: rgb(32, 0, 0);
+}
+
+.new_thread_form{
+	display: none;
+	margin-bottom: 30px;
+}
+.button {
+border-left: 1px solid #D9D9D9;
+border-color: rgba(0, 0, 0, 0.15);
+vertical-align: top;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-image: url('http://as.gb.pgstatic.net/beta2/img/sprite.png');
+background-repeat: no-repeat;
+background-size: auto;
+background-position: 0 0;
+margin: 2px 4px;
+background-clip: padding-box;
+-webkit-background-clip: padding-box;
+background-color: white;
+border: 1px solid #A5A5A5;
+border-color: rgba(0, 0, 0, 0.35);
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+display: inline-block;
+padding: 4px 8px 2px;
+white-space: nowrap;
+font-size: 13px;
+line-height: 20px;
+min-height: 22px;
+color: #333;
+font-weight: bold;
+cursor: pointer;
+}
+.center{
+	margin-left:auto;
+	margin-right:auto;
 }

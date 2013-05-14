@@ -1,18 +1,19 @@
-<h2 class="centered">Threads</h2>
-        
-<h2>New Thread</h2>
-<ul>
-    <li>Title: <br><input type="text" class="new_thread_title" /></li>
-    <li>Message: <br><textarea class="new_thread_text" /></li>
-    <li><input type="submit" class="new_thread_submit" value="Create thread" /></li>
+<div class="button new_thread">New Thread</div>
+<ul class="new_thread_form center">
+    <li><input type="text" class="new_thread_title" placeholder="Thread Title"/></li>
+    <li><textarea class="new_thread_text" 
+    	placeholder="Add the first post to 
+    	this discussion. We would like you to elaborate on what this topic is about, 
+    	what is expected of people participating and anything important. "></textarea></li>
+    <li><div class="button new_thread_submit">Create thread</div><div class="button new_thread_cancel">Cancel</div></li>
 </ul>
         
 <table class="thread_list" cellspacing="1" cellpadding="6" width="99%">
 	<tr>
-		<td align="center" class="resourceBar">Title</td>
-		<td align="center" class="resourceBar">Posted By</td>
-		<td align="center" class="resourceBar">Replies</td>
-		<td align="center" class="resourceBar">Creation Date</td>
+		<th align="center" class="resourceBar">Title</th>
+		<th align="center" class="resourceBar">Posted By</th>
+		<th align="center" class="resourceBar">Replies</th>
+		<th align="center" class="resourceBar">Creation Date</th>
 	</tr>
 </table>
 <div class="error_message"></div>
